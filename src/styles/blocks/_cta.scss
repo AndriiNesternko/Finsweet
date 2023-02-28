@@ -1,0 +1,51 @@
+.cta{
+    padding: 96px 0;
+    &__wrapper{
+        text-align: center;
+
+        background: url(../img/main_page/cta_BG.png) center center/cover no-repeat;
+        padding: 92px 250px;
+        border-radius: 12px;
+    }
+
+    &__buttons{
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}
+
+ @media(max-width:1199px) {
+    .cta__wrapper{
+        padding: 92px 150px;
+    }
+ }
+@media(max-width:885px) {
+    .cta__wrapper{
+        padding: 70px 70px;
+    }
+}
+@media(max-width:768px) {
+    .cta{
+        padding: 70px 0;
+    }
+    .cta__wrapper{
+        padding: 70px 50px;
+    }
+}
+@media(max-width:575px) {
+    .cta__buttons{
+        gap: 20px;
+    }
+
+    .cta__wrapper{
+        padding: 50px 30px;
+    }
+}
+// @media(max-width:475px) {
+//     .cta__links{
+//         justify-content: stretch;
+//     }
+// }

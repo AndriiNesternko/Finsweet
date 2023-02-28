@@ -1,0 +1,44 @@
+.WWD {
+    padding: 96px 0;
+
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr minmax(300px, 1fr);
+        gap: 110px;
+
+        align-items: center;
+    }
+
+    &__wrapper {
+        padding-left: 96px;
+    }
+
+    .text{
+        margin-top: 34px;
+    }
+}
+
+@media(max-width:1070px) {
+    .WWD__container{
+        gap: 30px;
+    }
+}
+
+@media(max-width:768px) {
+    .WWD{
+        padding: 50px 0 70px 0;
+        &__container{
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+        &__wrapper {
+            padding-left: 0;
+        }
+
+        .text{
+            text-align: center;
+            margin-top: 16px;
+        }
+    }
+}

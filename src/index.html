@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('./html-parts/head.html')
+        <title>{Finsweet</title>
+    </head>
+    <body>
+        @@include('./html-parts/header.html')
+        <main>
+            @@include('./html-parts/main_page/hero.html')
+            @@include('./html-parts/main_page/about.html')
+            @@include('./html-parts/main_page/what.html')
+            <section class="projects">
+                <div class="container">
+                    <div class="projects__head">
+                        <h3 class="subtitle">Projects we have done</h3>
+                        <h2 class="title">We are Creating sustainable society, for everyone and forever.</h2>
+                    </div>
+                    @@include('./html-parts/project_cards.html')
+                </div>
+            </section>
+            @@include('./html-parts/main_page/stats.html')
+            @@include('./html-parts/cta.html')
+            @@include('./html-parts/news.html')
+            @@include('./html-parts/events.html') 
+        </main>
+        @@include('./html-parts/footer.html') 
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

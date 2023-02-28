@@ -1,0 +1,25 @@
+.features{
+    padding: 96px 0;
+    margin-bottom: 96px;
+    background-color: $off-white-color;
+    &__list{
+        max-width: 1024px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px;
+    }
+}
+
+@media(max-width:768px) {
+    .features{
+        padding: 70px 0;
+        margin-bottom: 70px;
+
+        &__list{
+            max-width: 500px;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+    }
+}

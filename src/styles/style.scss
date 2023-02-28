@@ -1,0 +1,48 @@
+@import "reset";
+@import "variables";
+@import "global";
+@import "media";
+
+@import "blocks/header";
+@import "blocks/popup";
+@import "blocks/main_page/hero";
+@import "blocks/main_page/about";
+@import "blocks/supporters";
+@import "blocks/main_page/what";
+@import "blocks/projects";
+@import "blocks/project_cards";
+@import "blocks/main_page/stats";
+
+@import "blocks/cta";
+@import "blocks/news";
+@import "blocks/events";
+@import "blocks/footer";
+
+@import "blocks/about_us_page/know_about";
+@import "blocks/about_us_page/mission";
+@import "blocks/about_us_page/awards";
+@import "blocks/about_us_page/journey";
+@import "blocks/about_us_page/team";
+@import "blocks/social";
+
+@import "blocks/what_we_do_page/WWD";
+@import "blocks/what_we_do_page/what-for";
+
+@import "blocks/tabs";
+@import "blocks/media_page/top_news";
+
+@import "blocks/contact_us_page/contact";
+@import "blocks/contact_us_page/form";
+@import "blocks/contact_us_page/map";
+
+@import "blocks/donate_page/donate";
+@import "blocks/donate_page/usage";
+@import "blocks/donate_page/how";
+
+@import "blocks/project_page/project";
+@import "blocks/project_page/features";
+
+@import "blocks/blog_page/blog";
+
+@import "blocks/events_page/say";
+@import "blocks/events_page/descr";

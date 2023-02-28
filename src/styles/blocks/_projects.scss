@@ -1,0 +1,37 @@
+.projects{
+    background-color: $white-color;
+    padding: 96px 0;
+    &__head{
+        padding-left: 96px;
+        max-width: 640px;
+        margin-bottom: 65px;
+    }
+
+    &__title{
+        max-width: 750px;
+        margin: 0 auto;
+        margin-bottom: 64px;
+    }
+}
+
+.projects_pad{
+    padding-bottom: 0;
+}
+
+@media(max-width:767px) {
+    .projects{
+        padding: 70px 0;
+        &__head{
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+
+        &__title{
+            margin-bottom: 30px;
+        }
+    }  
+
+    .projects_pad{
+        padding-bottom: 0;
+    }
+}

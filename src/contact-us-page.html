@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./html-parts/head.html')
+    <title>{Finsweet - Contact Us</title>
+</head>
+<body>
+    @@include('./html-parts/header_ow.html')
+    <main>
+        @@include('./html-parts/contact_us_page/contact.html')
+
+        <section class="contact-form">
+            <div class="container">
+                <form action="contact" class="form">
+                    <div class="form__first-name">
+                        <label for="first-name">First Name</label>
+                        <input type="text" placeholder="John" id="first-name" required>
+                    </div>
+                    <div class="form__last-name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" placeholder="Smith" id="last-name" required>
+                    </div>
+                    <div class="form__email">
+                        <label for="email">Email id</label>
+                        <input type="email" placeholder="me@example.com" id="email" required>
+                    </div>
+                    <div class="form__subject">
+                        <label for="subject">Subject</label>
+                        <input type="text" placeholder="Call me" id="subject" required>
+                    </div>
+                    <div  class="form__message">
+                        <label for="message">Message</label>
+                        <input type="text" placeholder="Type your Message" id="message" required>
+                    </div>
+                    <button class="btn">Send message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.6869626167745!2d-71.4281368845707!3d42.7315159791637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3b1f03fa91a0b%3A0x90f6162c7dc0abf!2sHudson%20Brews!5e0!3m2!1sru!2sua!4v1671137608416!5m2!1sru!2sua"  loading="lazy" class="map"></iframe>
+    @@include('./html-parts/footer.html') 
+    <script src="js/main.min.js"></script>
+</body>
+</html>

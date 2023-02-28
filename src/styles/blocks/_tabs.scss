@@ -1,0 +1,42 @@
+.tabs {
+    &__nav {
+        display: flex;
+        gap: 2px;
+    }
+
+    &__nav-btn {
+        border-bottom: solid 1px $border-color;
+        padding: 8px 24px;
+
+        font-weight: 500;
+        font-size: 16px;
+        color: $gray-color;
+        
+    }
+
+    &__nav-btn.active{
+        border-bottom: solid 2px $dark-green-color;
+
+        color: $black-color;
+    }
+    
+    &__content {
+        margin-top: 24px;
+    }
+
+    &__item {
+        display: none;
+    }
+
+    &__item.active{
+        display: block;
+    }
+}
+
+@media(max-width:575px) {
+    .tabs__nav-btn {
+        padding: 6px 18px;
+        font-size: 14px; 
+    }
+}
+

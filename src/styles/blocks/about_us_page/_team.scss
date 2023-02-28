@@ -1,0 +1,96 @@
+.team {
+padding-top: 96px;
+
+    .title{
+        margin-bottom: 16px;
+    }
+    
+    &__text{
+        max-width: 520px;
+        text-align: center;
+        margin: 0 auto;
+        opacity: .6;
+    }
+
+    &__persons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 32px;
+        row-gap: 48px;
+
+        margin-top: 48px;
+    }
+
+    &__person {
+        text-align: center;
+    }
+
+    .social{
+        justify-content: center;
+    }
+
+    &__person-photo {
+        margin-bottom: 16px;
+        border-radius: 8px;
+        overflow: hidden;
+        
+        img{
+            transition: all .4s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__person-name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 160%;
+        color: $black-color;
+    }
+
+    &__person-job {
+        font-weight: 500;
+        font-size: 12px;
+        color: $black-color;
+        opacity: 0.6;
+
+        margin-bottom: 12px;
+    }
+}
+
+@media(max-width:991px) {
+    .team{
+        &__person-name {
+            font-size: 16px;
+            line-height: 140%;
+        }
+
+        &__person-photo{
+            margin-bottom: 8px;
+        }
+    }
+}
+@media(max-width:768px) {
+    .team{
+        padding-top: 60px;
+        &__persons {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 32px;
+            row-gap: 32px;
+            margin-top: 32px;
+        }
+    }
+}
+@media(max-width:600px) {
+    .team__persons {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 32px;
+        margin-top: 32px;
+    }
+
+    .team__person-name {
+        font-size: 14px;
+    }
+}

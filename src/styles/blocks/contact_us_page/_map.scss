@@ -1,0 +1,12 @@
+.map{
+    width: 100vw;
+    height: 490px;
+    border: none;
+    padding-bottom: 0;
+}
+
+@media(max-width:575px) {
+    .map{
+        height: 300px;
+    }
+}

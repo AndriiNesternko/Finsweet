@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('./html-parts/head.html')
+    <title>{Finsweet - What We Do</title>
+</head>
+<body>
+    @@include('./html-parts/header.html')
+    <main>
+        <section class="WWD">
+            <div class="container WWD__container">
+                <div class="WWD__wrapper">
+                    <h3 class="subtitle">What we do</h3>
+                    <h2 class="title">We are working worldwide</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                </div>
+                <img src="img/what_icon/what_bg.jpg" alt="photo" class="WWD__img">
+            </div>
+        </section>
+
+        <section class="what-for">
+            <div class="container">
+                <h2 class="title">What we do for the environment</h2>
+                <ul class="list  what-for__list">
+                    <li class="list__item">
+                        <img src="img/what_icon/build.svg" alt="small logo" class="list__item-img">
+                        <div class="list__item-content">
+                            <h4 class="list__item-subtitle">Build Healthy Cities</h4>
+                            <p class="text list__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <img src="img/what_icon/water.svg" alt="small logo" class="list__item-img">
+                        <div class="list__item-content">
+                            <h4 class="list__item-subtitle">Protect Land and Water</h4>
+                            <p class="text list__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <img src="img/what_icon/hand.svg" alt="small logo" class="list__item-img">
+                        <div class="list__item-content">
+                            <h4 class="list__item-subtitle">Tree Plantation</h4>
+                            <p class="text list__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <img src="img/what_icon/drop.svg" alt="small logo" class="list__item-img">
+                        <div class="list__item-content">
+                            <h4 class="list__item-subtitle">Water sustainability</h4>
+                            <p class="text list__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <img src="img/what_icon/dog.svg" alt="small logo" class="list__item-img">
+                        <div class="list__item-content">
+                            <h4 class="list__item-subtitle">Animal Safety</h4>
+                            <p class="text list__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="list__item">
+                        <img src="img/what_icon/plant.svg" alt="small logo" class="list__item-img">
+                        <div class="list__item-content">
+                            <h4 class="list__item-subtitle">Biodiversity</h4>
+                            <p class="text list__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects projects_pad">
+            <div class="container">
+                <h3 class="subtitle subtitle-nonedivider tac">Projects we have done</h3>
+                <h2 class="title projects__title tac">We are Creating sustainable society, for everyone and forever.</h2>
+                @@include('./html-parts/project_cards.html')
+            </div>
+        </section>
+
+        @@include('./html-parts/cta.html')
+        @@include('./html-parts/news.html')
+        @@include('./html-parts/events.html') 
+    </main>
+    @@include('./html-parts/footer.html') 
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>

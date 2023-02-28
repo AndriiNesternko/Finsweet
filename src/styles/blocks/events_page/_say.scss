@@ -1,0 +1,55 @@
+.say {
+    padding: 96px 0;
+    background-color: $light-green-color;
+
+    &__container{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    &__info {
+        margin-top: 48px;
+        display: flex;
+        gap: 48px;
+    }
+
+    &__address,
+    &__date {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    &__detail {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        color: $black-color;
+    }
+}
+
+@media(max-width:768px) {
+    .say{
+        padding: 70px 0;
+        &__info {
+            margin-top: 36px;
+            gap: 24px;
+            justify-content: center;
+        }
+        &__detail {
+            font-size: 14px;
+            line-height: 140%;
+        }     
+    }
+}
+
+@media(max-width:575px) {
+    .say{
+        &__info {
+            gap: 16px;
+            flex-direction: column;
+            padding-left: 20px;
+        }  
+    }
+}
+

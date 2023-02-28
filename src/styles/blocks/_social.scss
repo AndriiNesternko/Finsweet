@@ -1,0 +1,15 @@
+.social {
+    display: flex;
+    gap: 15px;
+
+    &__link {
+        min-width: 20px;
+        opacity: .7;
+        transition: all .3s ease;
+
+        &:hover{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.descr {
+    padding: 96px 0;
+
+    &__container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    &__photo{
+        margin: 32px 0 8px;
+    }
+
+    &__text {
+        margin-top: 24px;
+    }
+}
+
+@media(max-width:768px) {
+    .descr{
+        padding: 70px 0;
+        &__photo{
+            margin-top: 24px;
+        }
+        &__text {
+            margin-top: 16px;
+        }
+    }
+}
+
+

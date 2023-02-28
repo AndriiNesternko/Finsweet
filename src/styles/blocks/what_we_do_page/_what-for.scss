@@ -1,0 +1,38 @@
+.what-for{
+    background-color: $light-green-color;
+    padding: 96px 0;
+    &__list{
+        margin-top: 64px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 64px;
+        row-gap: 48px;
+    }
+}
+
+@media(max-width:1000px) {
+    .what-for__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:768px) {
+    .what-for{
+        padding: 70px 0;
+    }
+
+    .what-for__list{
+        margin-top: 32px;
+
+        padding: 0 70px;
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+    }
+}
+@media(max-width:450px) {
+    .what-for__list{
+        padding: 0 20px;
+    }
+}
+// @media(max-width:329px) {
+// }

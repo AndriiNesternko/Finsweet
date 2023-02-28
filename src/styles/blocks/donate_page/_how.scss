@@ -1,0 +1,39 @@
+.how{
+    &__wrapper{
+        padding: 96px 0;
+        border-bottom: solid 2px $border-color;
+
+        display: grid;
+        grid-template-columns: 1fr minmax(380px, 1fr);
+        column-gap: 96px;
+    }
+
+    &__text{
+        margin-top: 24px;
+    }
+
+    .tabs{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:991px) {
+    .how__wrapper{
+        column-gap: 50px
+    }
+
+    .how .tabs{
+        margin-top: 48px;
+    }
+}
+@media(max-width:768px) {
+    .how__wrapper{
+            padding: 70px 0;
+            grid-template-columns: 1fr;
+        }
+}
+@media(max-width:575px) {
+    .how .tabs{
+        margin-top: 32px;
+    }
+}

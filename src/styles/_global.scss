@@ -1,0 +1,152 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color:$gray-color;
+
+    overflow-x: hidden;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.logo{
+    color:$dark-color;
+    font-size: 40px;
+    font-family: 'Sriracha', cursive;
+}
+
+.logo_white{
+    color:$white-color; 
+}
+
+////////////////////buttons///////////////////////////////////////////
+
+.btn{
+    background-color: $dark-green-color;
+    padding: 16px 32px;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: $white-color;
+
+    transition: all .3s ease;
+    &:hover{
+        background-color: #5a9a5d;
+    }
+}
+
+.btn_white{
+    background-color: $white-color;
+    color: $black-color;
+    &:hover{
+        background-color: #d2d3d6;
+    }
+}
+
+.btn_black{
+    background-color: $black-color;
+    &:hover{
+        background-color: #4a4d59;
+    }
+}
+
+.btn_small{
+    padding: 12px 30px;
+}
+
+////////////////////titles and subtitles, text///////////////////////////////////////////
+.title{
+    font-weight: 700;
+    font-size: 48px;
+    color: $black-color;
+    line-height: 120%;
+}
+
+.title_big{
+    font-size: 56px;
+}
+
+.title_white{
+    color: $white-color;
+}
+
+.title-wdivider{
+    font-weight: 500;
+    font-size: 40px;
+    color: $black-color;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    &::after{
+        content: "";
+        margin-top: 1px;
+        flex: 1 1 30%;
+        width: 100%;
+        height: 2px;
+        background-color: $border-color;
+    }
+}
+
+.subtitle{
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $black-color;
+
+    margin-bottom: 32px;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -24px;
+        transform: translate(-100%, -50%);
+        height: 1.5px;
+        width: 72px;
+        background-color: $black-color;
+    }
+}
+
+.subtitle-nonedivider{
+    &::before{
+        display: none;
+    }
+}
+
+.text{
+    font-size: 16px;
+    line-height: 160%;
+    color: $gray-color;
+}
+
+.tac{
+    text-align: center;
+}
+
+////////////////////list///////////////////////////////////////////
+.list{
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+
+        &-subtitle{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+
+            color: $black-color;
+        }
+    }
+}

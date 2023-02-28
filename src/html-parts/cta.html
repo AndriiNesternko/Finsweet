@@ -1,0 +1,53 @@
+<section class="cta">
+    <div class="container">
+        <div class="cta__wrapper">
+            <h2 class="title title_white">You can contribute to make the environment greener!</h2>
+            <div class="cta__buttons">
+                <button class="btn popup-btn" data-popup="#popup_1" data-popup-menu="#popup_menu_1">Join as a volunteer</button>
+                <button class="btn btn_white popup-btn" data-popup="#popup_2" data-popup-menu="#popup_menu_2">Donate</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="popup" id="popup_1">
+    <div class="popup__menu" id="popup_menu_1">
+        <div class="popup__title">Join as a volunteer</div>
+        <div class="popup__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum tristique.</div>
+        <button class="popup__close" data-popup="#popup_1" data-popup-menu="#popup_menu_1"><img src="img/X.svg" alt="x"></button>
+        <form action="contact" class="popup__form">
+            <div class="popup__form-first-name">
+                <label for="first-name">First Name</label>
+                <input type="text" placeholder="John" id="first-name" required>
+            </div>
+            <div class="popup__form-last-name">
+                <label for="last-name">Last Name</label>
+                <input type="text" placeholder="Smith" id="last-name" required>
+            </div>
+            <div class="popup__form-email">
+                <label for="email">Email id</label>
+                <input type="email" placeholder="me@example.com" id="email" required>
+            </div>
+            <div  class="popup__form-message">
+                <label for="message">Message</label>
+                <input type="text" placeholder="Type your Message" id="message" required>
+            </div>
+            <button class="btn popup__form-send">Send message</button>
+        </form>
+    </div>
+</div>
+
+<div class="popup" id="popup_2">
+    <div class="popup__menu" id="popup_menu_2">
+        <div class="popup__title">DONATE</div>
+        <div class="popup__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum tristique.</div>
+        <button class="popup__close" data-popup="#popup_2" data-popup-menu="#popup_menu_2"><img src="img/X.svg" alt="x"></button>
+        <ul class="popup__donation">
+            <li><a href="#" class="popup__donation-link"><img src="img/popup_section/card-outline.svg" alt="cash"></a></li>
+            <li><a href="#" class="popup__donation-link"><img src="img/popup_section/cash-outline.svg" alt="cash"></a></li>
+            <li><a href="#" class="popup__donation-link"><img src="img/popup_section/wallet-outline.svg" alt="cash"></a></li>
+            <li><a href="#" class="popup__donation-link"><img src="img/popup_section/id-card-outline.svg" alt="cash"></a></li>
+            <li><a href="#" class="popup__donation-link"><img src="img/popup_section/hand-right-outline.svg" alt="cash"></a></li>
+        </ul>
+    </div>
+</div>
