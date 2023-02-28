@@ -3,7 +3,7 @@
 
 
 A simple responsive website https://andriinesternko.github.io/Finsweet-dist-site/
-- HTML(name classes by BEM)
+- HTML(named classes by BEM)
 - SCSS(CSS)
 - Using Grids/Flexbox
 - JS
